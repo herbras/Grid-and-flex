@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        Dc: 'hsl(158, 36%, 37%)',
+                        Cream: 'hsl(30, 38%, 92%)',
+                        VDB: 'hsl(212, 21%, 14%)',
+                        DGB: 'hsl(228, 12%, 48%)',
+                        White: 'hsl(0, 0%, 100%)'
+                    },
+                    fontFamily: {
+                        'fraunces': ['Fraunces', 'sans-serif'], 'montserrat': ['Montserrat', 'sans-serif']
+                    },
+                    letterSpacing: {
+                        widest: '.45em'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-Cream font-montserrat">
+    <div class="md:flex md:flex-row flex-column h-screen justify-center items-center">
+        <div class="  ">
+            <img src="/images/image-product-desktop.jpg" alt="" class="w-80 md:h-full h-60 object-cover md: md:rounded-tl-lg md:rounded-bl-lg ">
+        </div>
+        <div class="flex-none w-80 bg-White md:rounded-tr-lg md:rounded-br-lg p-5">
+            <div class="flex  flex-wrap m-4  ">
+                <h2 class="flex-auto md:mb-5 mb-3 text-1x1 tracking-widest uppercase text-DGB font-medium">Perfume</h2>
+                <h1 class="text-4xl md:mb-6 mb-4 font-bold font-fraunces">Gabrielle Essence Eau De Parfum</h1>
+                <p class=" font-medium mr-3 text-sm md:mb-8 mb-6">A floral, solar and voluptuous interpretation composed by Olivier
+                    Polge, Perfumer-Creator for the House of CHANEL.</p>
+                <div class="price">
+                    <span class="font-bold font-fraunces text-4xl text-Dc" >$149.99 </span>
+                    <span class="line-through">$169.99</span>
+                </div>
+
+                <button type="button"
+                    class="text-white font-extrabold bg-Dc hover:bg-green-800  rounded-lg text-sm px-16 py-4 text-center inline-flex items-center  mr-2 mt-4">
+                    <img class="mr-2 -ml-1 w-4 h-4" src="./images/icon-cart.svg" alt="" srcset=""> Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
